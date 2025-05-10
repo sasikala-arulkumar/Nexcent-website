@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: Inder;
+	box-sizing: border-box;
+}
+header
+{
+	height: 100vh;
+}
+nav
+{
+	height: 100px;
+	background-color: rgba(255, 255,255,1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 50px;
+}
+.logo
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: rgba(38, 50, 56, 1);
+}
+.menu ul
+{
+	list-style-type: none;
+}
+.menu a
+{
+	text-decoration: none;
+	font-weight: 300;
+	font-size:18px ;
+	color: rgba(77,77,77, 1);
+	padding: 20px;	
+}
+button
+{
+	background-color: rgba(76, 175, 79, 1);
+	color: white;
+	font-size: 18px;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 5px;	
+}
+.menu-icon
+{
+	display: none;
+}
+@media(max-width:990px)
+{
+.menu-icon
+{
+	display: block;
+	font-size: 30px;	
+}
+.hide
+{
+	display: none;
+}
+.menu-but
+{
+	display: block;
+}
+}
+.container
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.left-content
+{
+	width: 50%;
+	margin: 100px 70px;
+}
+.left-content h1
+{
+	color: rgba(77,77,77, 1);
+	font-weight: 600;
+}
+.left-content h1 span
+{
+	color: rgba(76, 175, 79, 1);
+}
+.left-content p
+{
+	margin: 10px 0;
+}
+.container-but
+{
+	background-color: rgba(76, 175, 79, 1);
+	color: white;
+	font-size: 18px;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 5px;	
+	margin: 10px 0;
+}
+.right-content
+{
+	width: 40%;
+	height: 250px;
+	margin-right: 50px;	
+}
+.right-image
+{
+	height:250px ;
+	width: 100%;
+	background-image: url("header.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+@media(max-width:990px)
+{
+	.container
+	{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.left-content
+	{
+/*		width: 100%;*/
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.left-content h1 span
+	{
+		padding-left: 50px;
+	}
+
+	.right-content
+	{
+/*		width: 100%;*/
+	}
+
+}
+@media(max-width:550px)
+{
+	.left-content
+	{
+		width: 80%;
+		text-align: center;
+	}
+	.left-content h1 span
+	{
+		padding-left: 25px;
+	}
+}
+.page2
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.page2-container
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.heading
+{
+	color: rgba(77, 77, 77, 1);
+}
+.page2-para
+{
+	margin-top: 20px;
+	color: rgba(113, 113, 113, 1.0);
+}
+.page2-icons
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+.page2-logo
+{
+	margin: 20px 0;
+}
+@media(max-width:768px)
+{
+	.page2-para
+	{
+		width: 70%;
+		text-align: center;
+	}
+}
+	
+.page3
+{
+	width: 100%;
+	margin: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.page3-container
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.page3-container h1
+{
+	text-align: center;
+	color: rgba(77, 77, 77, 1.0);
+	font-weight: 600;
+}
+.page3-container p
+{
+	margin-top: 20px;
+	color: rgba(113, 113, 113, 1.0);
+}
+.card
+{
+	width: 100%;
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.card1
+{
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid;
+	box-shadow: rgba(171, 190, 209, 0.2);
+	border: none;
+}
+.card-cont
+{
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(171, 190, 209, 0.2);
+}
+.card-cont p
+{
+	font-weight: 400;
+	color: rgba(113, 113, 113, 1.0);
+	padding-bottom: 10px;
+}
+@media(max-width:768px)
+{
+	.card
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.page4
+{
+	width: 100%;
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.page4-container
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.page4-left
+{
+	width: 40%;
+	height: 350px;
+}
+.page4-image
+{
+	width: 100%;
+	height: 350px;
+	background-image: url("rafiki.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.page4-right
+{
+	width: 50%;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.page4-cont-right h2
+{
+	font-weight: 600;
+	color: rgba(77,77,77, 1.0);
+	padding-bottom:25px ;
+}
+.page4-cont-right p
+{
+	font-weight: 400;
+	color: rgba(113, 113, 113, 1.0);
+	padding-bottom:25px ;
+}
+@media(max-width:768px)
+{
+	.page4-container
+	{
+		flex-direction: column;
+	}
+	.page4-right
+	{
+		text-align: center;
+	}
+
+}
